@@ -1,4 +1,5 @@
 build
+.idea/
 .vscode
 valgrind-out.txt
 test.sh.log
