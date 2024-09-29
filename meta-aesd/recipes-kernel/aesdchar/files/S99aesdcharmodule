@@ -1,0 +1,16 @@
+#!/bin/sh
+case "$1" in
+    start)
+        echo "starting S99aesdcharmodule"
+        /usr/bin/aesdchar_load
+        ;;
+    stop)
+        echo "stopping S99aesdcharmodule"
+        /usr/bin/aesdchar_unload
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+    exit 1
+esac
+exit 0
+
